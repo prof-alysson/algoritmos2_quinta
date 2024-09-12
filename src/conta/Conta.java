@@ -1,4 +1,4 @@
-package src;
+package src.conta;
 
 public class Conta {
     Integer saldo = 0;

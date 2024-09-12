@@ -1,4 +1,4 @@
-package src;
+package src.conta;
 
 public class Cliente {
     String nome;
