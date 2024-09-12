@@ -2,7 +2,7 @@ package src.carrinho;
 
 public class Produto {
     private String nome;
-    Integer preco; // em centavos, pois não temos como dividir em meio centavo.
+    private Integer preco; // em centavos, pois não temos como dividir em meio centavo.
 
     public void setPreco(Double preco) {
         /*Na API os valores são em reais
@@ -24,6 +24,11 @@ public class Produto {
         Double preco_reais = this.preco.doubleValue() / 100.0;
         return preco_reais;
     }
+
+    public Integer getPrecoCentavos() {
+        return this.preco;
+    }
+
     public String getNome() {
         return this.nome;
     }
