@@ -18,5 +18,19 @@ public class TestarConta {
         System.out.printf("Saldo de %.2f\n", limite.saldo());
 
         limite.sacar(1000.0);
-        System.out.printf("Saldo de %.2f\n", limite.saldo());    }
+        System.out.printf("Saldo de %.2f\n", limite.saldo());
+
+        ContaComRendimento renda = new ContaComRendimento();
+        renda.setTaxaRendimento(10.0); // rende 10%
+        renda.depositar(1000.0);
+        System.out.printf("Saldo de %.2f\n", renda.saldo());
+        renda.gerarRendimento();
+        System.out.printf("Saldo de %.2f\n", renda.saldo());
+        renda.gerarRendimento();
+        System.out.printf("Saldo de %.2f\n", renda.saldo());
+        renda.gerarRendimento();
+        System.out.printf("Saldo de %.2f\n", renda.saldo());
+        renda.gerarRendimento();
+        System.out.printf("Saldo de %.2f\n", renda.saldo());
+    }
 }
