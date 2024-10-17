@@ -3,6 +3,10 @@ package src.contaComHeranca;
 public class ContaComRendimento extends Conta {
     protected Double taxaRendimento = 0.0;
 
+    public ContaComRendimento(String titular, Double saldoInicial) {
+        super(titular, saldoInicial);
+    }
+
     public void setTaxaRendimento(Double taxaRendimento) {
         this.taxaRendimento = taxaRendimento;
     }
